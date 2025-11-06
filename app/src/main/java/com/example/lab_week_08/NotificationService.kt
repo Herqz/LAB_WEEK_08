@@ -150,9 +150,9 @@ class NotificationService : Service() {
         .setOngoing(true)
 
     //This is a callback and part of a life cycle
-//This callback will be called when the service is started
-//in this case, after the startForeground() method is called
-//in your startForegroundService() custom function
+    //This callback will be called when the service is started
+    //in this case, after the startForeground() method is called
+    //in your startForegroundService() custom function
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int
     {
         val returnValue = super.onStartCommand(intent, flags, startId)
